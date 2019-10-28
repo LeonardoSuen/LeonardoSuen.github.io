@@ -1,60 +1,116 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>你好。 | Leonardo</title>
-<meta name="description" content="思想是人的存在之实体。" />
-<link rel="shortcut icon" href="https://yuusuen.github.io/favicon.ico?v=1572275082407">
+<meta name="description" content="思想是人的存在之实体。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yuusuen.github.io/favicon.ico?v=1572275394581">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yuusuen.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://yuusuen.github.io">
-  <img class="avatar" src="https://yuusuen.github.io/images/avatar.png?v=1572275082407" alt="">
-  </a>
-  <h1 class="site-title">
-    Leonardo
-  </h1>
-  <p class="site-description">
-    思想是人的存在之实体。
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://yuusuen.github.io">
+        <img class="avatar" src="https://yuusuen.github.io/images/avatar.png?v=1572275394581" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://yuusuen.github.io">
+        <h1 class="site-title">Leonardo</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">你好。</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-10-28</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://yuusuen.github.io/tag/KtOsp3La3">
+                    Gridea
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>来访者，你好。欢迎来到我的个人网站。我是一名理科生，但是我对历史和哲学的问题很感兴趣。我的高中语文老师说，理科生通一点文史知识是很有必要的。我觉得我应该达到了我的语文老师的标准了。</p>
+<p>作为一名标准的理科生，我不出意外地对技术很感兴趣，尤其是电脑相关的技术。我在使用电脑和学习技术的过程中，会发现一些很实用或者很炫酷的黑科技，在使用电脑的过程中也会自己进行一些思考，总结出一些使用电脑，或者说使用电子设备的系统的思路。这些我都会定期整理，发布在我的个人网站上。</p>
+<p>关于刚才我们谈到的哲学问题，我有一些自己的见解。我多方面了解，查阅过很多种观点，以哲学的角度看待科学，又以科学的视角分析哲学，最终总结出了自己的系统的世界观和方法论。关于我的思想，也会在日后不断整理，定期上传。</p>
+<p>不论出于什么目的，真诚地感谢您的来访。</p>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">思想是人的存在之实体。</div>
   <div class="social-container">
     
       
@@ -68,93 +124,26 @@
       
     
   </div>
+  Runned by Leonardo | <a class="rss" href="https://yuusuen.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              你好。
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-10-28
-              </span>
-              <span>
-                2 min read
-              </span>
-              
-                <a href="https://yuusuen.github.io/tag/KtOsp3La3" class="post-tag">
-                  # Gridea
-                </a>
-              
-            </div>
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>来访者，你好。欢迎来到我的个人网站。我是一名理科生，但是我对历史和哲学的问题很感兴趣。我的高中语文老师说，理科生通一点文史知识是很有必要的。我觉得我应该达到了我的语文老师的标准了。</p>
-<p>作为一名标准的理科生，我不出意外地对技术很感兴趣，尤其是电脑相关的技术。我在使用电脑和学习技术的过程中，会发现一些很实用或者很炫酷的黑科技，在使用电脑的过程中也会自己进行一些思考，总结出一些使用电脑，或者说使用电子设备的系统的思路。这些我都会定期整理，发布在我的个人网站上。</p>
-<p>关于刚才我们谈到的哲学问题，我有一些自己的见解。我多方面了解，查阅过很多种观点，以哲学的角度看待科学，又以科学的视角分析哲学，最终总结出了自己的系统的世界观和方法论。关于我的思想，也会在日后不断整理，定期上传。</p>
-<p>不论出于什么目的，真诚地感谢您的来访。</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
-            </div>
-          </article>
-        </div>
+    </div>
+    <script type="application/javascript">
 
-        
+hljs.initHighlightingOnLoad()
 
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://yuusuen.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>

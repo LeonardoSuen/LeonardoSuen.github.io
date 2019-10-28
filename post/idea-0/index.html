@@ -1,60 +1,128 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>序 -- 我、科学和我们所处的宇宙 | Leonardo</title>
-<meta name="description" content="思想是人的存在之实体。" />
-<link rel="shortcut icon" href="https://yuusuen.github.io/favicon.ico?v=1572275082407">
+<meta name="description" content="思想是人的存在之实体。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yuusuen.github.io/favicon.ico?v=1572275394581">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://yuusuen.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://yuusuen.github.io">
-  <img class="avatar" src="https://yuusuen.github.io/images/avatar.png?v=1572275082407" alt="">
-  </a>
-  <h1 class="site-title">
-    Leonardo
-  </h1>
-  <p class="site-description">
-    思想是人的存在之实体。
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://yuusuen.github.io">
+        <img class="avatar" src="https://yuusuen.github.io/images/avatar.png?v=1572275394581" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://yuusuen.github.io">
+        <h1 class="site-title">Leonardo</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">序 -- 我、科学和我们所处的宇宙</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-10-28</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://yuusuen.github.io/tag/G3Wx9tOJN">
+                    思想
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>我们生活在一个目前看起来按照一定规律运行的宇宙中。关于这个规律是否真正像我们目前所看到的这样存在，这仍然是一个疑问。</p>
+<p>在我中学阶段，我的一些想法和现在有很大的不同。我很喜欢也很擅长自然科学类的学科，比如物理、化学、生物。我很喜欢用所学到的规律知识去解释生活中的一些现象。后来，我明白了这是科学的基本模式：通过观察、总结现象，得出一定的规律，再用规律去解释和预测现象。如果预测的结果的确发生了，规律便得到了证实，科学也成为了真理。一旦将来的某一天，出现了不符合规律的现象，也就是科学得到了证伪，规律便会得到修正，以适应出现的现象；抑或被推翻，新提出的理论继承了它的位置，成为了新的规律。这样建立、修正、推翻、再建立的过程不断重复进行，科学也就不断发展，不断接近宇宙的真相，人类文明也在这个过程中不断进步；由此看来，只要人类文明存在的时间足够长，就会有最终的“完美的真理”现身于人类面前的那一天的到来。</p>
+<p>当时的我对于科学已经达到了崇拜的境地，其程度不亚于基督教信徒对上帝的崇拜。由于知识面狭窄，我认为宇宙中的一切都可以用科学知识来解释和预测；我甚至标榜自己为无神论者。进入大学之后，我学习的专业是生物科学。在学习这门科学的过程中，我了解到，人类现有的科学知识其实只能解释一部分观察到的现象，在某些领域还存在大片的空白；科学并没有我最初想象的那样完美。我开始对自己之前的想法产生了怀疑：如果说随着知识面的增加，被发现未知的事物就越多的话，那么未知的事物就是一个无底洞，人类永远也不能完整地认识我们所处的这个宇宙。这样的想法使我极度恐慌，因为这是从我自己内部开始，之前的信仰产生了动摇。科学完美的形象在我的思维中逐渐开始崩塌，取而代之的则是一片空白的虚无，这种虚无就像是在思考宇宙之外是否有物质和能量的存在一般。</p>
+<p>直到我接受了下面的这一观点，我心头的结才算解开：系统内部的观察者无法认识到系统的全部属性。就类似这样的情况：坐在一辆没有窗户的平稳的车上面的人无法知道车是静止的还是匀速直线运动的。我们就处在这个宇宙当中，要想认识到宇宙的全貌，就要跳出这个宇宙，以观察者的角度来探索这个宇宙。然而我们不能跑到宇宙的外面，也就无法探索到宇宙的全部属性，也就是说，科学无法完整地认识这个世界和宇宙。之前我们说到，人类的科学是不断更新换代的，是越来越接近“完美的真理”的。我承认“完美的真理”的存在，它可以用以解释世界上、宇宙中的一切现象。但是并没有人告诉过我，人类接近真理的速度是均匀的；换句话说，没有人能够证明人类的科学可以达到“完美的真理”的程度。</p>
+<p>自从产生了这样的想法，我便豁然开朗了，再去看之前思考过的问题都变得很简单了。科学处在一个不断进步，越来越接近“完美的真理”的状态，但是“接近”并不代表“会到达”，相反，随着科学越来越接近宇宙的真相，更多的未知的问题会展现在人们的面前。经历了这样的一个过程，我从一名坚定的可知论者逐步转变为了一名不可知论者，但我并不认为这属于“背叛”，我认为这是在认清现实之后做出的理性的判断，而不是一时冲动的选择。</p>
+<p>有人会反驳我，他们认为我的科学视角和不可知论观点发生了冲突。但事实上恰恰相反，这两者非但不冲突，而且还存在着一定的因果和递进的关系。正如我们所说，如果人类所掌握的知识可以用一个圆的面积来表示，那么随着人们掌握的知识总量（圆的面积）的增加，人类所接触到的未知的领域（圆的周长）就会越多。也就是说，只有具有足够的科学知识的量的积累，才会有可能意识到知识无法穷尽的事实，才有可能出现不可知论的观点。也就是说，科学知识的积累是不可知论观点出现的基础，不可知论观点的出现是科学知识不断积累，发生质变的结果。</p>
+<p>对于这里谈到的“不可知论”的观点，有这样的几个补充说明。首先“不可知论”的含义并不是意识无法认识物质世界，而是无法完整地认识我们所处的宇宙，这里所侧重的是“完整”这个词。缺少了这一关键词，便是对不可知论观点的误解；而不可知论观点的核心所在也正是“完整”这一限定词语，即意识只能认识到完整物质世界的一部分，总有一部分是在人类的认知范围只外的。两种说法的天壤之别显而易见。其次，虽然不可知论观点揭示了人类科学无法完整地认识宇宙全貌的事实，但是这并不代表着不可知论观点否认了科学的意义，相反，作为科学发展到一定程度的产物，不可知论观点意识到了科学进步在更深层次上的意义。关于这一部分的讨论，我们在后面的章节中会谈到。</p>
+<p>不可知论的观点并不是我提出的，在我还是可知论的追随者的时候，我就有接触过不可知论。但是接受不可知论的观点是我第一次从科学的圈子中跳了出来，以更高的格局去看待自己现有的想法和所处的状态。同时也是第一次把系统的哲学思想引入到了我的思维当中，第一次以哲学的角度去看待科学问题，从这以后，我更多地关注一个问题当中所体现出来的哲学思想。以哲学的视角看待科学的问题，或者说以更高的格局和框架去看待问题，是我后来的很多观点产生的原动力。在接下来的几个章节当中，我们会讨论到这些观点，并最终以科学的视角来看待和推动哲学问题的解决。</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://yuusuen.github.io/post/hello">
+              <h3 class="post-title">
+                下一篇：你好。
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">思想是人的存在之实体。</div>
   <div class="social-container">
     
       
@@ -68,106 +136,26 @@
       
     
   </div>
+  Runned by Leonardo | <a class="rss" href="https://yuusuen.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              序 -- 我、科学和我们所处的宇宙
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-10-28
-              </span>
-              <span>
-                7 min read
-              </span>
-              
-                <a href="https://yuusuen.github.io/tag/G3Wx9tOJN" class="post-tag">
-                  # 思想
-                </a>
-              
-            </div>
-            
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>我们生活在一个目前看起来按照一定规律运行的宇宙中。关于这个规律是否真正像我们目前所看到的这样存在，这仍然是一个疑问。</p>
-<p>在我中学阶段，我的一些想法和现在有很大的不同。我很喜欢也很擅长自然科学类的学科，比如物理、化学、生物。我很喜欢用所学到的规律知识去解释生活中的一些现象。后来，我明白了这是科学的基本模式：通过观察、总结现象，得出一定的规律，再用规律去解释和预测现象。如果预测的结果的确发生了，规律便得到了证实，科学也成为了真理。一旦将来的某一天，出现了不符合规律的现象，也就是科学得到了证伪，规律便会得到修正，以适应出现的现象；抑或被推翻，新提出的理论继承了它的位置，成为了新的规律。这样建立、修正、推翻、再建立的过程不断重复进行，科学也就不断发展，不断接近宇宙的真相，人类文明也在这个过程中不断进步；由此看来，只要人类文明存在的时间足够长，就会有最终的“完美的真理”现身于人类面前的那一天的到来。</p>
-<p>当时的我对于科学已经达到了崇拜的境地，其程度不亚于基督教信徒对上帝的崇拜。由于知识面狭窄，我认为宇宙中的一切都可以用科学知识来解释和预测；我甚至标榜自己为无神论者。进入大学之后，我学习的专业是生物科学。在学习这门科学的过程中，我了解到，人类现有的科学知识其实只能解释一部分观察到的现象，在某些领域还存在大片的空白；科学并没有我最初想象的那样完美。我开始对自己之前的想法产生了怀疑：如果说随着知识面的增加，被发现未知的事物就越多的话，那么未知的事物就是一个无底洞，人类永远也不能完整地认识我们所处的这个宇宙。这样的想法使我极度恐慌，因为这是从我自己内部开始，之前的信仰产生了动摇。科学完美的形象在我的思维中逐渐开始崩塌，取而代之的则是一片空白的虚无，这种虚无就像是在思考宇宙之外是否有物质和能量的存在一般。</p>
-<p>直到我接受了下面的这一观点，我心头的结才算解开：系统内部的观察者无法认识到系统的全部属性。就类似这样的情况：坐在一辆没有窗户的平稳的车上面的人无法知道车是静止的还是匀速直线运动的。我们就处在这个宇宙当中，要想认识到宇宙的全貌，就要跳出这个宇宙，以观察者的角度来探索这个宇宙。然而我们不能跑到宇宙的外面，也就无法探索到宇宙的全部属性，也就是说，科学无法完整地认识这个世界和宇宙。之前我们说到，人类的科学是不断更新换代的，是越来越接近“完美的真理”的。我承认“完美的真理”的存在，它可以用以解释世界上、宇宙中的一切现象。但是并没有人告诉过我，人类接近真理的速度是均匀的；换句话说，没有人能够证明人类的科学可以达到“完美的真理”的程度。</p>
-<p>自从产生了这样的想法，我便豁然开朗了，再去看之前思考过的问题都变得很简单了。科学处在一个不断进步，越来越接近“完美的真理”的状态，但是“接近”并不代表“会到达”，相反，随着科学越来越接近宇宙的真相，更多的未知的问题会展现在人们的面前。经历了这样的一个过程，我从一名坚定的可知论者逐步转变为了一名不可知论者，但我并不认为这属于“背叛”，我认为这是在认清现实之后做出的理性的判断，而不是一时冲动的选择。</p>
-<p>有人会反驳我，他们认为我的科学视角和不可知论观点发生了冲突。但事实上恰恰相反，这两者非但不冲突，而且还存在着一定的因果和递进的关系。正如我们所说，如果人类所掌握的知识可以用一个圆的面积来表示，那么随着人们掌握的知识总量（圆的面积）的增加，人类所接触到的未知的领域（圆的周长）就会越多。也就是说，只有具有足够的科学知识的量的积累，才会有可能意识到知识无法穷尽的事实，才有可能出现不可知论的观点。也就是说，科学知识的积累是不可知论观点出现的基础，不可知论观点的出现是科学知识不断积累，发生质变的结果。</p>
-<p>对于这里谈到的“不可知论”的观点，有这样的几个补充说明。首先“不可知论”的含义并不是意识无法认识物质世界，而是无法完整地认识我们所处的宇宙，这里所侧重的是“完整”这个词。缺少了这一关键词，便是对不可知论观点的误解；而不可知论观点的核心所在也正是“完整”这一限定词语，即意识只能认识到完整物质世界的一部分，总有一部分是在人类的认知范围只外的。两种说法的天壤之别显而易见。其次，虽然不可知论观点揭示了人类科学无法完整地认识宇宙全貌的事实，但是这并不代表着不可知论观点否认了科学的意义，相反，作为科学发展到一定程度的产物，不可知论观点意识到了科学进步在更深层次上的意义。关于这一部分的讨论，我们在后面的章节中会谈到。</p>
-<p>不可知论的观点并不是我提出的，在我还是可知论的追随者的时候，我就有接触过不可知论。但是接受不可知论的观点是我第一次从科学的圈子中跳了出来，以更高的格局去看待自己现有的想法和所处的状态。同时也是第一次把系统的哲学思想引入到了我的思维当中，第一次以哲学的角度去看待科学问题，从这以后，我更多地关注一个问题当中所体现出来的哲学思想。以哲学的视角看待科学的问题，或者说以更高的格局和框架去看待问题，是我后来的很多观点产生的原动力。在接下来的几个章节当中，我们会讨论到这些观点，并最终以科学的视角来看待和推动哲学问题的解决。</p>
 
-              </div>
-              <div class="toc-container">
-                
-              </div>
-            </div>
-          </article>
-        </div>
+    </div>
+    <script type="application/javascript">
 
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://yuusuen.github.io/post/hello">
-              <h3 class="post-title">
-                你好。
-              </h3>
-            </a>
-          </div>
-        
+hljs.initHighlightingOnLoad()
 
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://yuusuen.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
