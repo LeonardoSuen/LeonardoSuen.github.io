@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>【技术】序 -- 有关电脑的一些事情 | Leonardo</title>
+<meta name="description" content="思想是人的存在之实体。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://yuusuen.github.io/favicon.ico?v=1572317780668">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://yuusuen.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://yuusuen.github.io">
+        <img class="avatar" src="https://yuusuen.github.io/images/avatar.png?v=1572317780668" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://yuusuen.github.io">
+        <h1 class="site-title">Leonardo</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">【技术】序 -- 有关电脑的一些事情</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-10-29</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://yuusuen.github.io/tag/AzEjsVNI9">
+                    技术
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>关于电脑方面的事情，我一年前就想写一些东西，但是一直没有找到合适的机会，也有自己的原因，这个事情就被一直搁置了起来。最近我在实习，实习期间的室友是周李通（这个人很有意思，以后我们还会经常提到他），我们两个经常讨论一些关于电脑使用技巧、历史、哲学等方面的问题。讨论了一段时间之后，周李通发现我真他娘的是个人才，就跟我说，你可以把自己的这些技术啊想法啊整理整理，自己做一个网站，放在上面。我一想，这特么不就是我之前的想法吗。正好前段时间我自己闲着没事，做了一个网页模板的框架，直接拿过了就开始做。不到半天，就把网站的整体框架和设计弄好了。</p>
+<p>我从四岁开始就接触电脑。那时候家里的电脑是哥哥买的，每天没日没夜的带着我打游戏。我当时什么都不懂，他让我按哪个键我就按哪个键。后来哥哥去上大学了，我自己在家里用电脑的时候，就不断自己摸索新的事物，自己琢磨电脑的各种功能，遇到不会的地方就上网搜索（那个时候谷歌还没有被和谐，不过当时的谷歌界面很丑）。这个阶段我对电脑的熟练度不断提高，也基本了解了Windows系统电脑的基本操作思路。</p>
+<p>进入高中以后，我对游戏的需求减少了，取而代之的是对知识的渴求。知识的实践就是技术，伴随着我对知识的学习，电脑操作的技术也越来越提升。当然，在这个过程中，对技术提升的需求也起到了一定的作用。</p>
+<p>升入大学以后，用电脑越来越频繁，使用电脑就像吃饭睡觉一样平常。在大学里，我加入了信息宣传中心，主要负责技术方面的工作。这样的工作环境和强大的学习欲望的推动下，我开始探索各种各样的黑科技和小技巧，比如我们左侧列表里的不限速百度网盘、SSR的使用技巧等，并且还了解了一下Mac OS和Linux操作系统，这些我们接下来都会讲到。</p>
+<p>在我使用电脑的这十几年中，我逐渐摸索电脑的使用思路，并经过不断总结，利用已经掌握的使用思路去推测出可能还有哪些功能。我在接下来的文章中会逐渐渗透我所总结出来的电脑使用思路。希望您在阅读的过程中，不仅看到我记录的使用技巧，更重要的是技巧背后的内涵和思想。</p>
+<p>在此，我要感谢所有支持我的人，尤其是我的女朋友张雨晴，给予了我莫大的鼓励和支持，理解和帮助我去学习和实践这一方面的技术。对在我的提升之路上给予过我帮助和指导的各位大佬，在此一并表示感谢。</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://yuusuen.github.io/post/idea-0">
+              <h3 class="post-title">
+                下一篇：【思想】序 -- 我、科学和我们所处的宇宙
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">思想是人的存在之实体。</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Runned by Leonardo | <a class="rss" href="https://yuusuen.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
